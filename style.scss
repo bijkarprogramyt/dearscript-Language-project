@@ -1,0 +1,55 @@
+@import "var.scss";
+
+// univarsal selector
+* {
+    margin: $zeroValueVar;
+    padding: $zeroValueVar;
+}
+
+// body style
+
+body {
+    background-color: $body-bg-col;
+    color: $white-col-value;
+}
+// upar header style
+.upar {
+    //us header me h1 hota ho
+    h1 {
+        text-align: $cenAl;
+    }
+    // usme agar hr hota ho tab
+    hr {
+        border: $flBorder-White;
+    }
+}
+// main editor style
+.mainEditor {
+    top: 20px;
+    position: $rel-pos;
+    left: 30px;
+    // run btn style
+    #runBtn {
+        width: 110px;
+        height: 40px;
+        border: $flBorder-black;
+        cursor: $ponrerCursor;
+        background-color: $green-col;
+        color: $white-col-value;
+    }
+    // main editor ke under agar text box hota hei 
+    #textBox {
+        width: $wDh;
+        height: $heDh;
+    }
+    // main editor ke under agar output box hota hei
+    #outputBox {
+        width: $wDh;
+        height: $heDh;
+        background-color: $white-col-value;
+        color: $black-col-value;
+        border: $flBorder-black;
+        position: $rel-pos;
+        top: 5px;
+    }
+}
