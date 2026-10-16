@@ -11,6 +11,7 @@
 body {
     background-color: $body-bg-col;
     color: $white-col-value;
+    font-family: $sns-srp;
 }
 // upar header style
 .upar {
@@ -39,13 +40,17 @@ body {
     }
     // main editor ke under agar text box hota hei 
     #textBox {
-        width: $wDh;
+        width: $onHrPr;
+        max-width: $wDh;
         height: $heDh;
+        padding: 4px;
     }
     // main editor ke under agar output box hota hei
     #outputBox {
-        width: $wDh;
+        width: $onHrPr;
+        max-width: $wDh;
         height: $heDh;
+        padding: 4px;
         background-color: $white-col-value;
         color: $black-col-value;
         border: $flBorder-black;

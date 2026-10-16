@@ -15,6 +15,13 @@ var outputBox = document.getElementById("outputBox");
 runBtn.addEventListener('click', function(){
     // code var === value in text box
     var runCode = textBox.value;
-    // output ka text contain value
-    outputBox.innerHTML = runCode;
+    if (runCode.startsWith('bik')) {
+        // output ka text contain value
+        outputBox.innerHTML = runCode.substring(4);
+    }
+    else{
+        // errror message var
+        var errorSmg = "syntax error: invaid syntax";
+        outputBox.innerHTML = errorSmg;
+    }
 })
