@@ -1,0 +1,11 @@
+"use strict";
+// textbox var
+var textBox = document.getElementById("textBox");
+// fontsizr btn var 
+var fontSizeBtn8 = document.getElementById("fontSizeBtn8");
+// fontSizeBtn8 click event
+fontSizeBtn8.addEventListener('click', function () {
+    // 8px logic
+    textBox.style.fontSize = "8px";
+});
+// while true; do tsc fontSize.ts --ignoreConfig; sleep 1; done
